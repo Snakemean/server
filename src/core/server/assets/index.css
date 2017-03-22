@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "SS";
+    src: url("fonts/SharpSansNo1-Medium.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: "SS-semibold";
+    src: url("fonts/SharpSansDispNo1-Semibold.woff") format('woff');
+}
+
+body {
+  margin:0px;
+}
+
+h1, h2 {
+  margin:0px;
+  color:white;
+}
+
+h1 {
+  font-family: SS;
+  font-size:5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: SS-semibold;
+  font-size:1.5em;
+}
+
+.logo {
+  height:200px;
+}
+
+.upperbox{
+  width:100%;
+  height:100%;
+  background-image: url(img/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+
+.uppercontainer{
+  position:relative;
+  top:50px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  display: block;
+  font-size: 1.1em;
+  width:80vw;
+  max-width:600px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:30px;
+  padding: 10px 8px 10px 8px;
+  border-radius: 8px;
+  border:2px solid white;
+}
+
+input.box:focus {
+  border-color: orange;
+  outline-width: 0;
+}
+
+.submit {
+  display: block;
+  font-family: SS-semibold;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.1em;
+  width: 80vw;
+  max-width: 150px;
+  padding: 10px 8px 10px 8px;
+  border:none;
+  border-radius: 5px;
+  background-color: #4585f2;;
+  color:#f6f6f6;
+  font-size: 1.25em;
+}
+
+.submit:hover{
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition:all 200ms ease-out;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+}
+
+input.submit:focus {
+  outline-width: 0;
+}
+
+form {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-image: url(img/background-mobile.jpg);
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size:3em;
+  }
+  h2 {
+    font-size:1em;
+  }
+  .logo{
+    height:125px;
+  }
+  .box {
+    font-size:1em;
+  }
+}
