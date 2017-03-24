@@ -18,6 +18,12 @@ module.exports = {
   },
   module: {
     loaders: [{
+      test: /\.(eot|svg|ttf|woff|woff2)$/,
+      loader: 'url-loader'
+    },{
+      test: /\.jpg$/,
+      loader: 'url-loader'
+    },{
       test: /\.css$/,
       loader: 'css-loader'
     },{
