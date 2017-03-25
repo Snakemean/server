@@ -15,8 +15,14 @@ module.exports = {
   },
   module: {
     loaders: [{
+      test: /\.(eot|svg|ttf|woff|woff2)$/,
+      loader: 'url-loader'
+    },{
+      test: /\.jpg$/,
+      loader: 'url-loader'
+    },{
       test: /\.css$/,
-      loader: cssPlugin.extract('css-loader')
+      loader: 'css-loader'
     },{
       test: /\.svg$/,
       loader: 'raw-loader'
@@ -31,7 +37,7 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
-        CLIENT: JSON.stringify(true) 
+        CLIENT: JSON.stringify(true)
       }
     }),
     //new webpack.optimize.UglifyJsPlugin()
