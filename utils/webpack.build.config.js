@@ -29,6 +29,9 @@ module.exports = {
     },{
       test: /\.html$/,
       loader: 'raw-loader'
+    },{
+      test: /\.json$/,
+      loader: 'json-loader'
     }]
   },
   plugins: [
