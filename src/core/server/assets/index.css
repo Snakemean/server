@@ -30,6 +30,10 @@ h2 {
   font-size:1.5em;
 }
 
+.slogan {
+  margin-bottom:30px;
+}
+
 .logo {
   height:200px;
 }
@@ -63,12 +67,12 @@ h2 {
   font-size: 1.1em;
   width:80vw;
   max-width:600px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 8px 10px 8px;
   border-radius: 8px;
   border:1px solid white;
+  position: relative;
 }
 
 input.box:focus {
@@ -88,10 +92,11 @@ input.box:focus {
   padding: 10px 8px 10px 8px;
   border:none;
   border-radius: 5px;
-  background-color: #4585f2;;
+  background-color: #4585f2;
   color:#f6f6f6;
   font-size: 1.25em;
   margin-top:30px;
+  transition: all 200ms ease-out;
 }
 
 .submit:hover{
@@ -126,13 +131,13 @@ form {
   position:relative;
   top:-1px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #dropdown:empty {
   display:none;
 }
-
-
 
 .list-card {
   padding: 5px;
@@ -158,6 +163,37 @@ form {
   background-color: #eeeeee;
 }
 
+.form {
+  position:relative;
+}
+
+.inBarSubmit {
+  height:100%;
+  width:100px;
+  position: absolute;
+  right:0px;
+  top:0px;
+  border-radius: 0px 2px 2px 0px;
+  background-color:#4585f2;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.inBarSubmit:hover {
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.search {
+  height:21px;
+  width:auto;
+}
+
 @media only screen and (max-width: 700px) {
   body {
     background-image: url(img/background-mobile.jpg);
@@ -176,6 +212,10 @@ form {
   }
   .box {
     font-size:1em;
+  }
+
+  .inBarSubmit {
+    width:50px;
   }
   #dropdown{
     display:none;
