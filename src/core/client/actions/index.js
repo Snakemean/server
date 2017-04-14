@@ -15,8 +15,14 @@ function getInput(){
     console.log('into input capture, input is '+searchbar.value)
     var maskedlist = reducers.reduceInput(searchbar.value)
     console.log('masked list is '+ JSON.stringify(maskedlist))
+    var dropdown = document.getElementById('dropdown')
     if (maskedlist != null) {
       attachList(maskedlist)
+    } else {
+      while (dropdown.firstChild) {
+       dropdown.removeChild(dropdown.firstChild);
+    }
+
     }
   })
 }

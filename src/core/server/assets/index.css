@@ -71,15 +71,16 @@ h2 {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom:30px;
   padding: 10px 8px 10px 8px;
   border-radius: 8px;
-  border:2px solid white;
+  border:1px solid white;
 }
 
 input.box:focus {
-  border-color: orange;
+  border:1px solid #008ABF;
+  transition: 0.35s ease;
   outline-width: 0;
+  border-bottom: 1px solid #c3c3c3;
 }
 
 .submit {
@@ -96,6 +97,7 @@ input.box:focus {
   background-color: #4585f2;;
   color:#f6f6f6;
   font-size: 1.25em;
+  margin-top:30px;
 }
 
 .submit:hover{
@@ -123,6 +125,37 @@ form {
           align-items: center;
 }
 
+#dropdown {
+  background-color:white;
+  font-family: arial;
+  width: 80vw;
+  max-width: 580px;
+}
+
+.list-card {
+  padding: 5px;
+}
+
+.list-number {
+  padding: 5px;
+}
+
+.list-expan {
+  padding: 2.5px;
+}
+
+.list-card:hover {
+  background-color: #eeeeee;
+}
+
+.list-number:hover {
+  background-color: #eeeeee;
+}
+
+.list-expan:hover {
+  background-color: #eeeeee;
+}
+
 @media only screen and (max-width: 700px) {
   body {
     background-image: url(img/background-mobile.jpg);
@@ -141,5 +174,8 @@ form {
   }
   .box {
     font-size:1em;
+  }
+  #dropdown{
+    display:none;
   }
 }
