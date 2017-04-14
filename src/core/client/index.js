@@ -1,6 +1,5 @@
 'use strict'
 require('../server/assets/index.css')
-var components = require('./components')
+var actions = require('./actions')
 
-var Foo = require('../../modules/Foo')
-Foo.render()
+actions.getInput()
