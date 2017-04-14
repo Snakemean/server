@@ -48,19 +48,14 @@ h2 {
 .uppercontainer{
   position:relative;
   top:50px;
-  display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .box {
@@ -80,7 +75,6 @@ input.box:focus {
   border:1px solid #008ABF;
   transition: 0.35s ease;
   outline-width: 0;
-  border-bottom: 1px solid #c3c3c3;
 }
 
 .submit {
@@ -101,9 +95,8 @@ input.box:focus {
 }
 
 .submit:hover{
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition:all 200ms ease-out;
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
   transition: all 200ms ease-out;
   cursor: pointer;
 }
@@ -113,16 +106,12 @@ input.submit:focus {
 }
 
 form {
-  display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 #dropdown {
@@ -130,7 +119,20 @@ form {
   font-family: arial;
   width: 80vw;
   max-width: 580px;
+  border-top: 1px solid #c3c3c3;
+  border-bottom: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  position:relative;
+  top:-1px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+#dropdown:empty {
+  display:none;
+}
+
+
 
 .list-card {
   padding: 5px;
