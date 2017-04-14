@@ -67,6 +67,7 @@ h2 {
   font-size: 1.1em;
   width:80vw;
   max-width:600px;
+  height:43px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 8px 10px 8px;
@@ -110,7 +111,10 @@ input.submit:focus {
   outline-width: 0;
 }
 
-form {
+.form {
+  position:relative;
+  margin:0px;
+  padding:0px;
   display:-ms-flexbox;
   display:flex;
   -ms-flex-direction: column;
@@ -123,7 +127,10 @@ form {
   background-color:white;
   font-family: arial;
   width: 80vw;
-  max-width: 580px;
+  max-width: 488px;
+  position:relative;
+  top:0px;
+  right:45px;
   border-top: 1px solid #c3c3c3;
   border-bottom: 1px solid #d2d2d2;
   border-left: 1px solid #d2d2d2;
@@ -163,12 +170,9 @@ form {
   background-color: #eeeeee;
 }
 
-.form {
-  position:relative;
-}
-
 .inBarSubmit {
-  height:100%;
+  z-index: 5;
+  height:43px;
   width:100px;
   position: absolute;
   right:0px;
@@ -184,8 +188,7 @@ form {
 }
 
 .inBarSubmit:hover {
-  box-sizing: border-box;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+  border-left: 1px solid #b7b7b7;
   cursor: pointer;
 }
 
